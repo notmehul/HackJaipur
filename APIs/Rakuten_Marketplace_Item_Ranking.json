@@ -1,0 +1,31 @@
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://rakuten_webservice-rakuten-marketplace-item-ranking-v1.p.rapidapi.com/services/api/IchibaItem/Ranking/20170628");
+
+req.query({
+	"affiliateId": "abcdefgh",
+	"age": "30",
+	"callback": "a2d4g22fa",
+	"carrier": "0",
+	"elements": "itemName,itemPrice,itemUrl",
+	"format": "JSON",
+	"genreid": "1",
+	"page": "5",
+	"sex": "0"
+});
+
+req.headers({
+	"x-rapidapi-host": "rakuten_webservice-rakuten-marketplace-item-ranking-v1.p.rapidapi.com",
+	"x-rapidapi-key": "04ba6c0411msh53bf0b1baaca518p147ac8jsn059840840666"
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
+OUTPUT:
+
+[object Object]

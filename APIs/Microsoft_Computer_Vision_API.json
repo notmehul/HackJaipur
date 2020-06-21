@@ -1,0 +1,25 @@
+var unirest = require("unirest");
+
+var req = unirest("POST", "https://microsoft-azure-microsoft-computer-vision-v1.p.rapidapi.com/analyze");
+
+req.query({
+	"visualfeatures": "Categories,Tags,Color,Faces,Description"
+});
+
+req.headers({
+	"x-rapidapi-host": "microsoft-azure-microsoft-computer-vision-v1.p.rapidapi.com",
+	"x-rapidapi-key": "04ba6c0411msh53bf0b1baaca518p147ac8jsn059840840666",
+	"content-type": "application/x-www-form-urlencoded"
+});
+
+req.form({});
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
+OUTPUT:
+
+{"categories":[{"name":"people_group","score":0.90234375,"detail":{"celebrities":[]}}],"tags":[{"name":"person","confidence":0.99999737739562988},{"name":"posing","confidence":0.99603193998336792},{"name":"standing","confidence":0.99140721559524536},{"name":"group","confidence":0.97751766443252563},{"name":"outdoor","confidence":0.959872841835022},{"name":"people","confidence":0.95053797960281372},{"name":"friends","confidence":0.27369001507759094},{"name":"bus","confidence":0.11668294668197632},{"name":"curb","confidence":0.070180781185626984}],"description":{"tags":["person","posing","standing","building","group","outdoor","people","photo","front","man","holding","friends","young","wine","bunch","door","large","woman","bus","bench","park","city","train","street"],"captions":[{"text":"a group of people posing for a photo","confidence":0.99345457609120791}]},"faces":[{"age":34,"gender":"Male","faceRectangle":{"top":176,"left":728,"width":55,"height":55}},{"age":30,"gender":"Male","faceRectangle":{"top":151,"left":515,"width":50,"height":50}},{"age":34,"gender":"Female","faceRectangle":{"top":157,"left":621,"width":47,"height":47}},{"age":29,"gender":"Male","faceRectangle":{"top":183,"left":210,"width":47,"height":47}},{"age":46,"gender":"Male","faceRectangle":{"top":147,"left":282,"width":47,"height":47}},{"age":27,"gender":"Male","faceRectangle":{"top":134,"left":386,"width":45,"height":45}},{"age":27,"gender":"Female","faceRectangle":{"top":132,"left":100,"width":44,"height":44}}],"color":{"dominantColorForeground":"Black","dominantColorBackground":"Black","dominantColors":["Black","Grey"],"accentColor":"455D86","isBwImg":false},"requestId":"99161836-8c87-4c14-b7dc-dfe6ea24c750","metadata":{"height":607,"width":910,"format":"Png"}}

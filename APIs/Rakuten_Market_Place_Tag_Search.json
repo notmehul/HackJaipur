@@ -1,0 +1,23 @@
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://rakuten_webservice-rakuten-marketplace-tag-search-v1.p.rapidapi.com/services/api/IchibaTag/Search/20140222");
+
+req.query({
+	"tagId": "1000317"
+});
+
+req.headers({
+	"x-rapidapi-host": "rakuten_webservice-rakuten-marketplace-tag-search-v1.p.rapidapi.com",
+	"x-rapidapi-key": "04ba6c0411msh53bf0b1baaca518p147ac8jsn059840840666"
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
+OUTPUT:
+
+{"error":"wrong_parameter","error_description":"tagId is required"}

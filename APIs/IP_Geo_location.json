@@ -1,0 +1,23 @@
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://ip-geo-location.p.rapidapi.com/ip/%7Bip%7D");
+
+req.query({
+	"format": "json"
+});
+
+req.headers({
+	"x-rapidapi-host": "ip-geo-location.p.rapidapi.com",
+	"x-rapidapi-key": "04ba6c0411msh53bf0b1baaca518p147ac8jsn059840840666"
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
+OUTPUT:
+
+{"area":{"code":"OR","name":"Oregon"},"asn":{"number":8987,"organisation":"Amazon Data Services Ireland Ltd"},"city":{"name":"Boardman","population":3354},"continent":{"code":"NA","name":"North America"},"country":{"area_size":"9629091.00 sq. km","capital":"Washington","code":"US","is_in_eu":false,"name":"United States","phone_code":"1","population":310232863},"currency":{"code":"USD","name":"US Dollar"},"ip":"96.127.8.12","location":{"latitude":45.8491,"longitude":-119.7143},"postcode":"97818","security":{"is_crawler":false,"is_proxy":false,"is_thread":false,"is_tor":false},"status":"success","time":{"time":"2019-06-14 08:46:30 -0700","timezone":"America/Los_Angeles"},"type":"IPv4"}
