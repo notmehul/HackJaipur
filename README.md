@@ -1,8 +1,8 @@
 # HackJaipur
 
-TEAM NAME:oPTIMIZe
+TEAM NAME:OPTIMIZE
 
-Title : Social Networking Platform for E-commerce platform
+Title : Social Networking Platform for E-commerce websites
 
 Theme: E-Commerce is now so central to our lives with new buying patterns and experiences. Ideas like COD, Buy online pick from Store, Virtual trial rooms to crowd-sourced logistics, the opportunity to solve is infinite. Innovation is only a "thought" away. Here is a huge runway to take-off your ideas. Your hacks can range from conversational shopping to smart logistics to product recommendations. All and Any.
 
