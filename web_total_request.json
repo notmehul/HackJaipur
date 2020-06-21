@@ -1,0 +1,86 @@
+{
+  "size": 0,
+  "aggs": {
+    "grid": {
+      "geotile_grid": {
+        "field": "geo.coordinates",
+        "precision": 6
+      },
+      "aggs": {
+        "1": {
+          "geo_centroid": {
+            "field": "geo.coordinates"
+          }
+        },
+        "sum_of_bytes": {
+          "sum": {
+            "field": "bytes"
+          }
+        }
+      }
+    }
+  },
+  "_source": {
+    "excludes": []
+  },
+  "stored_fields": [
+    "*"
+  ],
+  "script_fields": {
+    "hour_of_day": {
+      "script": {
+        "source": "doc['timestamp'].value.getHour()",
+        "lang": "painless"
+      }
+    }
+  },
+  "docvalue_fields": [
+    {
+      "field": "@timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "utc_time",
+      "format": "date_time"
+    }
+  ],
+  "query": {
+    "bool": {
+      "must": [],
+      "filter": [
+        {
+          "match_all": {}
+        },
+        {
+          "geo_bounding_box": {
+            "geo.coordinates": {
+              "top_left": [
+                -176.45473,
+                69.48603
+              ],
+              "bottom_right": [
+                -1.3874099999999956,
+                11.58827
+              ]
+            }
+          }
+        },
+        {
+          "range": {
+            "timestamp": {
+              "format": "strict_date_optional_time",
+              "gte": "2019-11-04T18:33:31.359Z",
+              "lte": "2019-11-11T18:33:31.359Z"
+            }
+          }
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+  }
+}   

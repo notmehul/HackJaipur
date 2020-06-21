@@ -1,0 +1,51 @@
+{
+    "mapping": {
+      "_meta": {
+        "created_by": "ml-file-data-visualizer"
+      },
+      "properties": {
+        "available_size": {
+          "type": "keyword"
+        },
+        "brand_name": {
+          "type": "keyword"
+        },
+        "color": {
+          "type": "keyword"
+        },
+        "description": {
+          "type": "text"
+        },
+        "mrp": {
+          "type": "keyword"
+        },
+        "pdp_url": {
+          "type": "keyword"
+        },
+        "price": {
+          "type": "keyword"
+        },
+        "product_category": {
+          "type": "keyword"
+        },
+        "product_name": {
+          "type": "text"
+        },
+        "rating": {
+          "type": "keyword"
+        },
+        "retailer": {
+          "type": "keyword"
+        },
+        "review_count": {
+          "type": "keyword"
+        },
+        "style_attributes": {
+          "type": "text"
+        },
+        "total_sizes": {
+          "type": "keyword"
+        }
+      }
+    }
+  }

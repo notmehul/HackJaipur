@@ -1,0 +1,21 @@
+Gamification
+*Everything given in points on the platform*
+    Apple pay:
+        give users extra points for using our card for buying products online/offline
+        take a small fee from banks for every purchase made using our card
+        daily scheme
+            2% cashback on all purchases; 3% for every payment made at rakuten e commerce;
+            5% cashback on all rakuten services
+    Credit Scores:
+        Depend on:
+        Payment history: 35 percent. Have you missed payments or defaulted on loans?
+        Current debt: 30 percent. How much do you owe, and are you maxed out?
+        Length of credit: 15 percent. Is credit new to you, or do you have a long history of borrowing and paying it back?
+        New credit: 10 percent. Have you applied for numerous loans in the recent past?
+        Types of credit: 10 percent. Do you have a healthy mix of different types of debt: auto, home, credit cards, and others?
+        If (score <=1k)
+            points=-points/10
+    Game like features:
+        1) First person to review a product get's extra points as compared to a regular review
+        2)Bonus points are also there for the number of likes and shares a person gets on their post
+        3)BOOST MODE: By giving up a small number of points, the person gets a boost in the amount of points gained for a short period of time
