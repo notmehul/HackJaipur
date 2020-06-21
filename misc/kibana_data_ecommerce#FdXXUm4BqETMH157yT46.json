@@ -1,0 +1,143 @@
+{
+    "_index": "kibana_sample_data_ecommerce",
+    "_type": "_doc",
+    "_id": "FdXXUm4BqETMH157yT46",
+    "_score": 1,
+    "_source": {
+      "category": [
+        "Men's Clothing",
+        "Men's Shoes"
+      ],
+      "currency": "EUR",
+      "customer_first_name": "Sultan Al",
+      "customer_full_name": "Sultan Al Adams",
+      "customer_gender": "MALE",
+      "customer_id": 19,
+      "customer_last_name": "Adams",
+      "customer_phone": "",
+      "day_of_week": "Monday",
+      "day_of_week_i": 0,
+      "email": "sultan al@adams-family.zzz",
+      "manufacturer": [
+        "Elitelligence",
+        "Microlutions"
+      ],
+      "order_date": "2019-11-11T18:10:05+00:00",
+      "order_id": 715133,
+      "products": [
+        {
+          "base_price": 28.99,
+          "discount_percentage": 0,
+          "quantity": 1,
+          "manufacturer": "Elitelligence",
+          "tax_amount": 0,
+          "product_id": 22059,
+          "category": "Men's Clothing",
+          "sku": "ZO0537005370",
+          "taxless_price": 28.99,
+          "unit_discount_amount": 0,
+          "min_price": 15.07,
+          "_id": "sold_product_715133_22059",
+          "discount_amount": 0,
+          "created_on": "2016-12-12T18:10:05+00:00",
+          "product_name": "Relaxed fit jeans - black",
+          "price": 28.99,
+          "taxful_price": 28.99,
+          "base_unit_price": 28.99
+        },
+        {
+          "base_price": 16.99,
+          "discount_percentage": 0,
+          "quantity": 1,
+          "manufacturer": "Elitelligence",
+          "tax_amount": 0,
+          "product_id": 13763,
+          "category": "Men's Shoes",
+          "sku": "ZO0508605086",
+          "taxless_price": 16.99,
+          "unit_discount_amount": 0,
+          "min_price": 9.34,
+          "_id": "sold_product_715133_13763",
+          "discount_amount": 0,
+          "created_on": "2016-12-12T18:10:05+00:00",
+          "product_name": "Trainers - dark brown",
+          "price": 16.99,
+          "taxful_price": 16.99,
+          "base_unit_price": 16.99
+        },
+        {
+          "base_price": 11.99,
+          "discount_percentage": 0,
+          "quantity": 1,
+          "manufacturer": "Elitelligence",
+          "tax_amount": 0,
+          "product_id": 19774,
+          "category": "Men's Clothing",
+          "sku": "ZO0566605666",
+          "taxless_price": 11.99,
+          "unit_discount_amount": 0,
+          "min_price": 5.88,
+          "_id": "sold_product_715133_19774",
+          "discount_amount": 0,
+          "created_on": "2016-12-12T18:10:05+00:00",
+          "product_name": "Print T-shirt - black/orange",
+          "price": 11.99,
+          "taxful_price": 11.99,
+          "base_unit_price": 11.99
+        },
+        {
+          "base_price": 24.99,
+          "discount_percentage": 0,
+          "quantity": 1,
+          "manufacturer": "Microlutions",
+          "tax_amount": 0,
+          "product_id": 15185,
+          "category": "Men's Clothing",
+          "sku": "ZO0111301113",
+          "taxless_price": 24.99,
+          "unit_discount_amount": 0,
+          "min_price": 11.5,
+          "_id": "sold_product_715133_15185",
+          "discount_amount": 0,
+          "created_on": "2016-12-12T18:10:05+00:00",
+          "product_name": "Tracksuit bottoms - mottled grey",
+          "price": 24.99,
+          "taxful_price": 24.99,
+          "base_unit_price": 24.99
+        }
+      ],
+      "sku": [
+        "ZO0537005370",
+        "ZO0508605086",
+        "ZO0566605666",
+        "ZO0111301113"
+      ],
+      "taxful_total_price": 82.96,
+      "taxless_total_price": 82.96,
+      "total_quantity": 4,
+      "total_unique_products": 4,
+      "type": "order",
+      "user": "sultan",
+      "geoip": {
+        "country_iso_code": "AE",
+        "location": {
+          "lon": 54.4,
+          "lat": 24.5
+        },
+        "region_name": "Abu Dhabi",
+        "continent_name": "Asia",
+        "city_name": "Abu Dhabi"
+      }
+    },
+    "fields": {
+      "order_date": [
+        "2019-11-11T18:10:05.000Z"
+      ],
+      "products.created_on": [
+        "2016-12-12T18:10:05.000Z",
+        "2016-12-12T18:10:05.000Z",
+        "2016-12-12T18:10:05.000Z",
+        "2016-12-12T18:10:05.000Z"
+      ]
+    }
+  }
